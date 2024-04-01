@@ -1,13 +1,12 @@
 import React from 'react';
-import Reset_senha from './Reset_senha';
+import Form_login from '../Form_login';
 
-
-function Reset() { 
+function Login() { 
   return (
     <div className=' vh-100 d-flex align-items-center justify-content-center' style={{ backgroundColor: 'red'}}>   
-        <Reset_senha/>
+      <Form_login/>
     </div>
   );
 } 
 
-export default Reset;
+export default Login;

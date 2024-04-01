@@ -1,8 +1,8 @@
 import React from 'react';
-import Nav from './Nav';
-import Aside from './Aside';
-import Cadastro_aluno from './Cadastro_aluno';
-import Cadastro_professor from './Cadastro_professor';
+import Nav from '../Nav';
+import Aside from '../Aside';
+import Cadastro_aluno from '../Cadastro_aluno';
+import Cadastro_professor from '../Cadastro_professor';
 
 function Registro() { 
   return (

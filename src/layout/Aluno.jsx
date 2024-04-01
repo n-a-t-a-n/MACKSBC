@@ -1,6 +1,6 @@
-import Nav from './Nav';
-import Aside from './Aside';
-import Tabela_freq from './Tabela_freq';
+import Nav from '../Nav';
+import Aside from '../Aside';
+import Tabela_freq from '../Tabela_freq';
 
 function Aluno() { 
 

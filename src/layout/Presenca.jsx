@@ -1,10 +1,10 @@
-import Nav from './Nav.jsx';
-import Aside from './Aside.jsx';
-import Tabela_aluno from './Tabela_aluno.jsx';
-import Data from './Data.jsx';
-import Botao from './Botao.jsx';
+import Nav from '../Nav.jsx';
+import Aside from '../Aside.jsx';
+import Tabela_aluno from '../Tabela_aluno.jsx';
+import Data from '../Data.jsx';
+import Botao from '../Botao.jsx';
 import {deleteDoc, addDoc, doc, query, where, getDocs,collection} from 'firebase/firestore'
-import {db} from './firebase-config.js'
+import {db} from '../firebase-config.js'
 import React, { useState, useEffect } from 'react';
 
 function Presenca() {   

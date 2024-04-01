@@ -1,11 +1,11 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Login from './Login';
-import Registro from './Registro';
-import Presenca from './Presenca';
-import Aluno from './Aluno';
-import Reset from './Reset';
+import Login from './layout/Login';
+import Registro from './layout/Registro';
+import Presenca from './layout/Presenca';
+import Aluno from './layout/Aluno';
+import Reset from './layout/Reset';
 
 
 function App() {
