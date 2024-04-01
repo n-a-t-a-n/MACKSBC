@@ -1,0 +1,21 @@
+
+
+.menu{
+    background-color: red;
+    width: 20vw;
+}
+
+
+.menu_texto{
+    color: red;    
+    width: 90%;
+    margin-left: 5%;
+    background-color: white;
+}
+
+
+
+.menu_texto:hover{
+    color: white;
+    background-color: red;    
+}

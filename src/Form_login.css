@@ -1,0 +1,31 @@
+
+.largura_login{
+    width: 30%;
+    border-radius: 30px;
+}
+
+.espessura_campo{
+    height: 10%;
+}
+
+.espessura_campo:focus{
+    outline-color: red;
+}
+
+.botao_login
+{
+    background-color: red;
+}
+
+
+.botao_reset{
+    background-color: black;
+}
+
+.botao_login:hover {
+    background-color: rgb(153, 42, 42);
+}
+
+.botao_login:active{
+    background-color: rgb(153, 42, 42) !important;
+}

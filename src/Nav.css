@@ -1,0 +1,25 @@
+
+.cabecalho{
+    width: 100vw;
+    height: 10vh;
+}
+
+.logo_cabecalho{
+    width: 20vw;
+}
+
+.titulo{
+    width: 50vw;
+    color: red;
+    border-top: thin solid rgb(187, 184, 184);
+    border-bottom: thin solid rgb(187, 184, 184);
+}
+
+.user{
+    width: 30vw;
+    background-color: lightgray;
+    color: rgb(88, 88, 88);
+    border-style: solid;
+    border-color: rgb(187, 184, 184);
+    border-width: thin;
+}
