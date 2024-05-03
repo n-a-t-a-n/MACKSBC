@@ -4,6 +4,8 @@ import './Cadastro_professor.css';
 import {collection, addDoc } from 'firebase/firestore'
 import { getAuth, createUserWithEmailAndPassword,  } from "firebase/auth";
 import {db} from './firebase-config.js'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Cadastro_professor() {
   
@@ -16,6 +18,15 @@ function Cadastro_professor() {
   const [email, setEmail] = useState();
 
   const cadastraProfessor = () =>{
+
+    if(
+      matricula === undefined || matricula === '' ||
+      professor === undefined || professor === '' ||
+      disciplina === undefined || disciplina === '' ||
+      email === undefined || email === ''){    
+      toast.error('Dados incompletos !');
+      return;
+    }    
     createUserWithEmailAndPassword(auth, email,email).then((e) => {
       addDoc(prof, {Matricula_prof: matricula, Nome_prof: professor, Disciplina: disciplina, Email: email, Coordenador: 0, UID: e.user.uid})
       console.log('cadastro de professor teve sucesso');
@@ -27,6 +38,7 @@ function Cadastro_professor() {
 
   return (
     <div className='cadastro_form'> 
+    <ToastContainer position="top-right"/>
     <h2 className='cadastro_titulo fs-4 mt-3 mb-4 fw-bold'>CADASTRO DE PROFESSOR</h2>
       <div className='d-flex flex-column align-items-start ms-5 mt-2 justify-content-between h-75'>
         <input type="text" className='w-25 cadastro_campos rounded' onChange={(event) => {setMatricula(event.target.value)}}placeholder='Matrícula...' /> 
